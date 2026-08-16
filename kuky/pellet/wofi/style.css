@@ -1,0 +1,44 @@
+window {
+    font-family: "Lilex", monospace;
+    font-size: 18px;
+    background-color: black;
+    border: 2px solid #222F3F;
+    border-radius: 0px;
+    color: #e6e6e6;
+}
+
+#input {
+    margin-bottom: 8px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: #fff;
+    box-shadow: none;
+}
+
+#inner-box {
+    background-color: transparent;
+}
+
+#outer-box {
+    margin: 10px;
+    padding: 5px;
+    background-color: transparent;
+}
+
+#entry {
+    border-radius: 8px;
+    color: #cccccc;
+}
+
+#entry:selected {
+    color: #ffffff;
+    background: transparent;
+    border: 2px solid #222F3F;
+    border-radius: 0px;
+    outline: none;
+}
+
+#text {
+    margin-left: 3px;
+}
