@@ -20,9 +20,11 @@ cd $HOME
 paru -S --noconfirm linux-headers intel-ucode nvidia-dkms nvidia-utils sof-firmware
 paru -S --noconfirm pipewire pipewire-pulse pipewire-alsa pipewire-jack wireplumber bluez bluez-utils
 paru -S --noconfirm noto-fonts noto-fonts-emoji nerd-fonts ttf-lilex
-paru -S --noconfirm hyprland sddm hyprpolkitagent alacritty hyprpaper mako wofi ranger xdg-desktop-portal-hyprland waybar wl-clipboard
-paru -S --noconfirm python-pipx tree-sitter-cli neovim gcc clang ripgrep
+paru -S --noconfirm hyprland sddm hyprpolkitagent alacritty hyprpaper mako wofi ranger xdg-desktop-portal-hyprland waybar wl-clipboard bibata-cursor-theme-bin hyprshot
+paru -S --noconfirm python-pipx tree-sitter-cli neovim gcc clang ripgrep pyright rust-analyzer
 paru -S --noconfirm openssh wireshark-qt nmap arp-scan macchanger netcat
+paru -S --noconfirm firefox
+
 pipx install kuky
 pipx ensurepath
 
@@ -40,6 +42,7 @@ sudo pacman -S --needed \
 
 sudo systemctl enable --now libvirtd.service
 sudo usermod -aG libvirt,kvm $USER
+sudo usermod -aG wireshark $USER
 
 rm -rf ~/osinstaller/
 
