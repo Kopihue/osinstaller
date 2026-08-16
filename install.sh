@@ -23,7 +23,7 @@ paru -S --noconfirm noto-fonts noto-fonts-emoji nerd-fonts ttf-lilex
 paru -S --noconfirm hyprland sddm hyprpolkitagent alacritty hyprpaper mako wofi ranger xdg-desktop-portal-hyprland waybar wl-clipboard bibata-cursor-theme-bin hyprshot
 paru -S --noconfirm python-pipx tree-sitter-cli neovim gcc clang ripgrep pyright rust-analyzer
 paru -S --noconfirm openssh wireshark-qt nmap arp-scan macchanger netcat
-paru -S --noconfirm firefox
+paru -S --noconfirm firefox rnote qutebrowser
 
 pipx install kuky
 pipx ensurepath
@@ -43,6 +43,9 @@ sudo pacman -S --needed \
 sudo systemctl enable --now libvirtd.service
 sudo usermod -aG libvirt,kvm $USER
 sudo usermod -aG wireshark $USER
+
+mv ~/osinstaller/wallpapers ~/Pictures
+mv ~/osinstaller/bashrc ~/.bashrc
 
 rm -rf ~/osinstaller/
 

@@ -18,7 +18,7 @@ hl.monitor({
 ---------------------
 local terminal    = "alacritty"
 local menu        = "wofi"
-local firefox 	  = "firefox"
+local browser 	  = "qutebrowser"
 
 -------------------
 ---- AUTOSTART ----
@@ -219,7 +219,7 @@ local mainMod = "SUPER" -- Sets "Windows" key as main modifier
 -- Example binds, see https://wiki.hypr.land/Configuring/Basics/Binds/ for more
 hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
-hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(firefox))
+hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
 hl.bind(mainMod .. " + P", hl.dsp.exec_cmd("hyprshot -m region -o ~/Pictures/screenshots"))
 hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
