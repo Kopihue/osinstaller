@@ -19,10 +19,10 @@ cd $HOME
 
 paru -S --noconfirm linux-headers intel-ucode nvidia-dkms nvidia-utils sof-firmware
 paru -S --noconfirm pipewire pipewire-pulse pipewire-alsa pipewire-jack wireplumber bluez bluez-utils
-paru -S --noconform noto-fonts noto-fonts-emoji nerd-fonts ttf-lilex
+paru -S --noconfirm noto-fonts noto-fonts-emoji nerd-fonts ttf-lilex
 paru -S --noconfirm hyprland sddm hyprpolkitagent alacritty hyprpaper mako wofi ranger xdg-desktop-portal-hyprland waybar wl-clipboard
 paru -S --noconfirm python-pipx tree-sitter-cli neovim gcc clang ripgrep
-paru -S --noconfirm openssh wireshark nmap arp-scan macchanger netcat
+paru -S --noconfirm openssh wireshark-qt nmap arp-scan macchanger netcat
 pipx install kuky
 pipx ensurepath
 
@@ -43,6 +43,4 @@ sudo usermod -aG libvirt,kvm $USER
 
 rm -rf ~/osinstaller/
 
-kuky switch pellet
-echo "REBOOT NOW"
-
+echo "REBOOT NOW AND SWITCH PROFILE"
