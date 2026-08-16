@@ -23,7 +23,7 @@ paru -S --noconfirm noto-fonts noto-fonts-emoji nerd-fonts ttf-lilex
 paru -S --noconfirm hyprland sddm hyprpolkitagent alacritty hyprpaper mako wofi ranger xdg-desktop-portal-hyprland waybar wl-clipboard bibata-cursor-theme-bin hyprshot
 paru -S --noconfirm python-pipx tree-sitter-cli neovim gcc clang ripgrep pyright rust-analyzer
 paru -S --noconfirm openssh wireshark-qt nmap arp-scan macchanger netcat
-paru -S --noconfirm firefox rnote qutebrowser
+paru -S --noconfirm firefox rnote qutebrowser xp-pen-tablet
 
 pipx install kuky
 pipx ensurepath
@@ -34,6 +34,7 @@ mv kuky/ ~/.config/
 
 sudo systemctl enable sddm bluetooth
 systemctl enable --user pipewire pipewire-pulse wireplumber
+systemctl --user enable xppentablet.service
 
 sudo pacman -S --needed \
 	 qemu-desktop libvirt virt-manager virt-viewer \
@@ -43,6 +44,7 @@ sudo pacman -S --needed \
 sudo systemctl enable --now libvirtd.service
 sudo usermod -aG libvirt,kvm $USER
 sudo usermod -aG wireshark $USER
+sudo usermod -aG users $USER
 
 mv ~/osinstaller/wallpapers ~/Pictures
 mv ~/osinstaller/bashrc ~/.bashrc
